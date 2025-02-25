@@ -1,0 +1,108 @@
+@use 'source/reset.scss';
+@use 'source/variables.scss';
+@use 'sass:color';
+
+@mixin elementAlign() {
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Estilos
+
+body {
+    background-color: variables.$corDeFundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    @include elementAlign();
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    @include elementAlign();
+    background-color: variables.$corPrimaria;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+
+    li a {
+        color: variables.$corLumina;
+        text-decoration: none;
+    }
+}
+
+.menu-top {
+    display: flex;
+}
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    .product-item img {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .product-button {
+        display: block;
+        background-color: variables.$corSecundaria;
+        color: variables.$corLumina;
+        text-align: center;
+        padding: 8px 0;
+        border-radius: 8px;
+        margin-top: 8px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: color.scale(variables.$corSecundaria, $lightness: 15%);
+        }
+    }
+}
+
+// responsivo
+
+@media screen and (max-width: variables.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: variables.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
