@@ -1,0 +1,119 @@
+//imports
+@import "maps.less";
+@import "variables.less";
+
+//mixins e regras gerais
+    li {
+        list-style: none;
+    }
+
+    section {
+        padding: 56px 0;
+    }
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media @breakpointTablet {
+            max-width: 80%;
+        }
+
+        @media @breakpointMobile {
+            max-width: 80%;
+        }
+    }
+
+    .divcontainer {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+
+        @media @breakpointTablet {
+            max-width: 80%;
+        }
+
+        @media @breakpointMobile {
+            max-width: 80%;
+        }
+    }
+
+//estilos
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fontePrincipal;
+}
+
+body {
+    background-color: #colors[backgroundColor];
+}
+
+.header-div {
+    background-color: #colors[headerColor];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    &-container {
+        .divcontainer();
+    }
+}
+
+.menu {
+    display: flex;
+
+    &-li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+
+    &-li a {
+        color: #colors[backgroundColor];
+        text-decoration: none;
+    }
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    &-item-img {
+    width: 100%;
+    border-radius: 16px;
+    }
+
+    &-button {
+    display: block;
+    background-color: #colors[buttonColor];
+    color: #colors[backgroundColor];
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #colors[buttonColor];
+        filter: brightness(110%);
+    }
+    }
+
+    @media @breakpointMobile {
+        display: block;
+
+        .products-item  {
+            margin-bottom: 32px;
+        }
+    }
+}
