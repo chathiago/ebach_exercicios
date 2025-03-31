@@ -4,194 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./build/styles/main.css">
 </head>
 <body>
-    <header id="titulo">
-        <div class="container">
-            <h1>PORTAL</h1>
+    <header class="header-div">
+        <div class="header-div-container">
+            <div class="branding">
+                <img src="https://placehold.co/120x70"/>
+            </div>
             <nav>
-                <ul>
-                    <li>
-                        <a href="#esportes" title="Ir para a seção de esportes">Esportes</a>
+                <ul class="menu">
+                    <li class="menu-li">
+                        <a class="menu-li-a" href="#">Início</a>
                     </li>
-                    <li>
-                        <a href="#economia" title="Ir para a seção de notícias">Economia</a>
+                    <li class="menu-li">
+                        <a class="menu-li-a" href="#">Produtos</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="esportes">
+    
+    <section>
         <div class="container">
-            <h2>Esportes</h2>
-                <div class="articles">
-                    <article>
-                        <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
-                        <header>
-                            <time class="postdata">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Grande clássico na noite de hoje</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </article>
-                    <article>
-                        <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
-                        <header>
-                            <time class="postdata">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Noite do Superbowl</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </article>
-                    <article>
-                        <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                        <header>
-                            <time class="postdata">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Notícia sobre a NBA</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </article>
-                    <article>
-                        <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                        <header>
-                            <time class="postdata">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Notícia sobre a NBA</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </article>
-                </div>
-        </div>
-    </section>
-    <section id="economia">
-        <div class="container">
-            <h2>Economia</h2>
-                <div class="articles">
-                    <article>
-                        <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
-                        <header>
-                            <time class="postdata">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Dólar em alta de 0.50%</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </article>
-                    <article>
-                        <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
-                        <header>
-                            <time class="postdata">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Euro em queda de 0.40%</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </article>
-                    <article>
-                        <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
-                        <header>
-                            <time class="postdata">13/07/2022 às 12:35</time>
-                        </header>
-                        <h3>Alta no preço do barril do petróleo</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                        </p>
-                        <a href="#" title="Leia a notícia completa">Ler mais</a>
-                    </article>
-                </div>
-        </div>
-    </section>
-    <section id="entretenimento">
-        <div class="container">
-            <h2>Entretenimento</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/celine-dion.jpg" alt="Selfie de Celine Dion com fãs">
-                    <header>
-                        <time class="postdata">29/07/2024 às 18:43</time>
-                    </header>
-                    <h3>Céline Dion atende pedido de fãs em Paris e viraliza ao se confundir</h3>
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="products-item">
+                    <img class="products-item-img" src="https://placehold.co/180x180" />
+                    <h4>Nome do produto</h4>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet officia natus molestias fugiat nihil consequuntur ipsa dignissimos. Impedit laborum eius et expedita, totam animi eaque illo earum similique nisi?
+                        Descrição do produto, cor, tamanho, textura, etc.
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/mar-morto.jpg" alt="Vista de cima do Mar Morto">
-                    <header>
-                        <time class="postdata">29/07/2024 às 18:47</time>
-                    </header>
-                    <h3>Profecia bíblica? Peixes no Mar Morto surpreendem pesquisadores</h3>
+                    <a href="#" class="products-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="products-item">
+                    <img class="products-item-img" src="https://placehold.co/180x180" />
+                    <h4>Nome do produto</h4>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet officia natus molestias fugiat nihil consequuntur ipsa dignissimos. Impedit laborum eius et expedita, totam animi eaque illo earum similique nisi?
+                        Descrição do produto, cor, tamanho, textura, etc.
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/casal-popular.jpg" alt="Casal Príncipe William e Kate Middleton">
-                    <header>
-                        <time class="postdata">29/07/2024 às 18:50</time>
-                    </header>
-                    <h3>O casal mais popular no ano que você nasceu!</h3>
+                    <a href="#" class="products-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="products-item">
+                    <img class="products-item-img" src="https://placehold.co/180x180" />
+                    <h4>Nome do produto</h4>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet officia natus molestias fugiat nihil consequuntur ipsa dignissimos. Impedit laborum eius et expedita, totam animi eaque illo earum similique nisi?
+                        Descrição do produto, cor, tamanho, textura, etc.
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section id="tecnologia">
-        <div class="container">
-            <h2>Tecnologia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/planeta-venus.jpg" alt="Superfície do Planeta Vênus">
-                    <header>
-                        <time class="postdata">29/07/2024 às 18:58</time>
-                    </header>
-                    <h3>Novos sinais potenciais de vida são encontrados em Vênus</h3>
+                    <a href="#" class="products-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="products-item">
+                    <img class="products-item-img" src="https://placehold.co/180x180" />
+                    <h4>Nome do produto</h4>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet officia natus molestias fugiat nihil consequuntur ipsa dignissimos. Impedit laborum eius et expedita, totam animi eaque illo earum similique nisi?
+                        Descrição do produto, cor, tamanho, textura, etc.
                     </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/fosseis-gabao.jpg" alt="Fotos de fósseis encontrados no Gabão, país da África Central">
-                    <header>
-                        <time class="postdata">29/07/2024 às 18:58</time>
-                    </header>
-                    <h3>Cientistas acreditam que vida na Terra é mais antiga do que se pensava</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet officia natus molestias fugiat nihil consequuntur ipsa dignissimos. Impedit laborum eius et expedita, totam animi eaque illo earum similique nisi?
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/gene-envelhecimento.jpg" alt="Imagem ilustrativa de genes do dna humano">
-                    <header>
-                        <time class="postdata">29/07/2024 às 19:03</time>
-                    </header>
-                    <h3>Cientistas descobrem o gene responsável pelo envelhecimento</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet officia natus molestias fugiat nihil consequuntur ipsa dignissimos. Impedit laborum eius et expedita, totam animi eaque illo earum similique nisi?
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
+                    <a href="#" class="products-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </body>
