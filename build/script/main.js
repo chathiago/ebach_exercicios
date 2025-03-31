@@ -1,0 +1,1 @@
+function dividir(r,i){return r/i}function somar(r,i){return r+i}module.exports=dividir,module.exports=somar;
