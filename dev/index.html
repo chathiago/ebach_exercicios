@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMuseum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="cabecalho-div">
+        <header class="cabecalho-header">
+            <h1>
+                Your Galerie Museum
+            </h1>
+            <div class="cabecalho-menu">
+                <nav>
+                    <li><button type="button" id="botao-procurar"><i><img src="./images/search.svg"></i>Buscar</button></li>
+                    <li><button type="button" id="botao-criar"><i><img src="./images/upload.svg"></i>Criar</button></li>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="form-div" id="form-criar">
+        <form>
+            <h3>Cole o link da imagem:</h2>
+            <input type="url" id="link-da-imagem" placeholder="https://example.com/image.jpg" required>
+            <button type="submit"><a><img src="./images/upload.svg"></a></button>
+            <button type="button" id="botao-cancelar"><a><img src="./images/x.svg"></a></button>
+        </form>
+    </div>
+
+    <div class="form-div" id="form-procurar">
+        <form>
+            <h3>Digite o código museum:</h2>
+            <input type="url" id="link-da-imagem" placeholder="123" required>
+            <button type="submit"><a><img src="./images/search.svg"></a></button>
+            <button type="button" id="botao-cancelar-busca"><a><img src="./images/x.svg"></a></button>
+        </form>
+    </div>
+
+    <section>
+        <ul class="galeria-imagens">
+            <li>
+                <div class="galeria-item">
+                    <img src="./images/1902.jpg" alt="Cachoeira do Tabuleiro">
+                </div>
+            </li>
+            <li>
+                <div class="galeria-item">
+                    <img src="./images/193.jpg" alt="Cachoeira da Muralha">
+                </div>
+            </li>
+            <li>
+                <div class="galeria-item">
+                    <img src="./images/30863.jpg" alt="Lagoa do Manto">
+                </div>
+            </li>
+            <li>
+                <div class="galeria-item">
+                    <img src="./images/43450.jpg" alt="Ramal do Cão">
+                </div>
+            </li>
+            <li>
+                <div class="galeria-item">
+                    <img src="./images/761.jpg" alt="Fazenda do Capão">
+                </div>
+            </li>
+            <li>
+                <div class="galeria-item">
+                    <img src="./images/94.jpg" alt="Vale do Karst">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="compartilhar">
+        <div class="compartilhar-div">
+            <div class="compartilhar-texto">
+                <h1>Compartilhe seu Museum</h1>
+                <p>Gere um código secreto e compartilhe com seus amigos próximos.
+                    Eles vão encontrar seu museum ao digitarem o código no área de busca.</p>
+            </div>
+            <div class="gerador-codigo">
+                <button type="button" id="gerar-codigo">Gerar código</button>
+                <div class="codigo-gerado">
+                    <h3>Seu código museum é: <br><span class="codigo-final">3000</span></br></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
