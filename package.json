@@ -1,0 +1,16 @@
+{
+  "name": "exec-mod-19---boas-praticas-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass main.scss main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sas": "^3.0.4"
+  }
+}
